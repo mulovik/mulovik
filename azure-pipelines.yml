@@ -27,3 +27,4 @@ stages:
         dockerfile: 'samples/aspnetapp/Dockerfile'
         tags: |
           $(tag)
+        output: /out
