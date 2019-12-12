@@ -24,8 +24,11 @@ stages:
       displayName: Build an image
       inputs:
         command: buildAndPush
+        repository: 'mulovik'
+        azureSubscription: 'Azure_Connection'
         dockerfile: 'samples/aspnetapp/Dockerfile'
         containerRegistry: 'mulovikpipe'
+
         tags: |
           $(tag)
     
